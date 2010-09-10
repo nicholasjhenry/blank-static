@@ -11,3 +11,10 @@ h2. Getting Started
   $ cd ./blank-static
   $ staticmatic preview .
 </pre>
+
+h2. Release Notes
+
+h3. version 1.0.0
+
+This "official" release uses Bundler to freeze gems so older sites using this
+version can still generate CSS without upgrading the SASS files. These dependencies are mostly related to Compass and Sass.

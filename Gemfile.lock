@@ -1,0 +1,25 @@
+GEM
+  specs:
+    cgi_multipart_eof_fix (2.5.0)
+    compass (0.8.16)
+      haml (>= 2.2.0)
+    daemons (1.1.0)
+    fastthread (1.0.7)
+    gem_plugin (0.2.3)
+    haml (2.2.0)
+    mongrel (1.1.5)
+      cgi_multipart_eof_fix (>= 2.4)
+      daemons (>= 1.0.3)
+      fastthread (>= 1.0.1)
+      gem_plugin (>= 0.2.3)
+    staticmatic (0.10.1)
+      haml (>= 2.0)
+      mongrel (>= 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  compass (= 0.8.16)
+  haml (= 2.2.0)
+  staticmatic (= 0.10.1)
