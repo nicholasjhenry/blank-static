@@ -22,24 +22,28 @@
 
     = stylesheets :screen, :media => :screen
     = stylesheets :print, :media => :print
+
     /[if lt IE 8]
       = stylesheets :ie
 
+    /[if lt IE 9]
+      = javascripts "http://html5shiv.googlecode.com/svn/trunk/html5.js"
+
   %body{:id => "site-id", :class => "bp"}
     .container
-      .header#banner
-        #branding
-          %h1
+      %header#banner
+        %section#branding
+          %h1 
             %span Firsthand Web Design
 
           %h2 This is blank static using Haml, Sass, Compass and Blueprint CSS
 
         = partial "google-custom-search-form"
 
-        .nav#utility
+        %nav#utility
           = partial "utility" 
 
-        .nav#primary
+        %nav#primary
           = partial "menu"
           
       %hr.space
@@ -48,7 +52,7 @@
       = yield
     
       %hr
-      #footer
+      %footer
         = partial 'footer'
 
     = javascripts "http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js", "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "/javascripts/application.js"

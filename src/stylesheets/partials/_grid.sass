@@ -13,20 +13,20 @@ $padding: 15px
 .container
   +container
 
-  #banner
+  header#banner
     +column(24)
     #branding
       +column(19)
 
-    .nav#utility
+    nav#utility
       +column(5, true)
 
-  .nav#secondary
+  nav#secondary
     +column(3)
     // TODO You probably want to remove the border
     +colborder
   
-  #article
+  article
     +column(14)
     // TODO You probably want to remove the border
     +colborder
@@ -34,7 +34,7 @@ $padding: 15px
   #sidebar
     +column(5, true)
   
-  #footer
+  footer
     +column(24)
   
     #contact
