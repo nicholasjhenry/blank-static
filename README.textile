@@ -45,9 +45,3 @@ Now you can visit http://localhost:3000.
 h2. Next Steps
 
 Start customizing and adding to the existing Haml and Sass files to build your static website or prototype templates for your web application.
-
-h2. Release Notes
-
-h3. Version 1.0.0
-
-This "official" release uses Bundler to freeze gems so older sites using this version can still generate CSS without upgrading the SASS files. These dependencies are mostly related to Compass and Sass.
