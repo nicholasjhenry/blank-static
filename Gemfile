@@ -1,5 +1,5 @@
 source "http://rubygems.org"
 
-gem "haml", "2.2.0"
-gem "compass", "0.8.16"
-gem "staticmatic", "0.10.1"
+gem "haml", "3.0.18"
+gem "compass", "0.10.5"
+gem "staticmatic", "0.10.8"

@@ -1,16 +1,16 @@
 // You must use the round_corners as the last element in the container you
 // want to have rounded corners
-=round-corners(!image="/images/modules/rounded_corners/dt_round_white.png", !top_left=true, !top_right=true, !bottom_right=true, !bottom_left=true)
+=round-corners($image="/images/modules/rounded_corners/dt_round_white.png", $top_left=true, $top_right=true, $bottom_right=true, $bottom_left=true)
   padding: 0px
   position: relative
 
   b.cn
-    background = "transparent" url(!image) "no-repeat" "scroll" 0%
+    background = "transparent" url($image) "no-repeat" "scroll" 0%
     height: 10px
     position: absolute
     width: 10px
 
-  @if !top_left
+  @if $top_left
     b.tl 
       background-position: left top
       left: -1px
@@ -19,7 +19,7 @@
     b.tl
       background-image: none
 
-  @if !top_right
+  @if $top_right
     b.tr 
       background-position: right top
       right: -1px
@@ -29,7 +29,7 @@
       background-image: none
 
 
-  @if !bottom_right
+  @if $bottom_right
     b.br 
       background-position: right bottom
       bottom: -1px
@@ -39,7 +39,7 @@
       background-image: none
 
 
-  @if !bottom_left
+  @if $bottom_left
     b.bl 
       background-position: left bottom
       bottom: -1px

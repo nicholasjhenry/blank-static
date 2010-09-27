@@ -1,16 +1,25 @@
-@import blueprint.sass
-@import blueprint/modules/scaffolding.sass
-@import compass/reset.sass
+// This import applies a global reset to any page that imports this stylesheet.
+@import blueprint/reset
 
-// pick and choose what we want from +blueprint
-+blueprint-typography
-+blueprint-utilities
-+blueprint-debug
+// To configure blueprint, edit the partials/base.sass file.
+@import partials/base
 
-// TODO: remove the scaffolding when you're ready to start doing visual design.
-// or leave it in if you're happy with how blueprint looks out-of-the-box
+// Import all the default blueprint modules so that we can access their mixins.
+@import blueprint
 
-// +blueprint-grid
-// +blueprint-interaction
-+blueprint-form
-+blueprint-scaffolding
+// Combine the partials into a single screen stylesheet.
+@import partials/page
+@import partials/form
+
+// BlankStatic:
+
+// Add modules as required
+@import modules/dropdown_menu
+@import modules/search
+@import modules/font_samples
+
+// Partials
+@import partials/color
+@import partials/typography
+@import partials/grid
+@import partials/menu
