@@ -7,7 +7,7 @@ BlankStatic adds a set of HAML and Sass templates to the default template genera
 The Haml and Sass templates include:
 
 * a set of standard pages such as index, 404 and 505 error pages
-* a "simple" page layout for styling headers, paragraphs, tables, and forms
+* a "basic" page layout for styling headers, paragraphs, tables, and forms
 * a default layout of stylesheet partials
 * a default grid and layout for pages based on Blueprint CSS
 * sample styles for drop-down CSS menus and others
