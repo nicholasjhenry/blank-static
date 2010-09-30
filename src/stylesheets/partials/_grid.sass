@@ -13,25 +13,25 @@ $padding = 15px
 .container
   +container
 
-  #masthead
+  #banner
     +column(24)
     #branding
       +column(19)
 
-    #utility
+    .nav#utility
       +column(5, true)
 
-  #sub-menu
+  .nav#secondary
     +column(3)
     // TODO You probably want to remove the border
     +colborder
   
-  #content
+  #article
     +column(14)
     // TODO You probably want to remove the border
     +colborder
 
-  #side-bar
+  #sidebar
     +column(5, true)
   
   #footer

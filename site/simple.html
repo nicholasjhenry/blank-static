@@ -27,17 +27,12 @@
   </head>
   <body class='bp' id='site-id'>
     <div class='container'>
-      <div id='masthead'>
+      <div class='header' id='banner'>
         <div id='branding'>
-          <h1>Firsthand Web Design</h1>
+          <h1>
+            <span>Firsthand Web Design</span>
+          </h1>
           <h2>This is blank static using Haml, Sass, Compass and Blueprint CSS</h2>
-        </div>
-        <div id='utility'>
-          <ul>
-            <li><a href="/?ref=util">Home</a></li>
-            <li><a href="news.html?ref=util">News</a></li>
-            <li><a href="contact.html?ref=util">Contact</a></li>
-          </ul>
         </div>
         <form action='/search' id='cse-search-box'>
           <div>
@@ -47,7 +42,16 @@
             <input class='text search' name='q' type='text' />
           </div>
         </form>
-        <div id='menu-main'>
+        <div class='nav' id='utility'>
+          <div id='utility'>
+            <ul>
+              <li><a href="/?ref=util">Home</a></li>
+              <li><a href="news.html?ref=util">News</a></li>
+              <li><a href="contact.html?ref=util">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class='nav' id='primary'>
           <ul>
             <li class='has_children'>
               <a href="solutions.html?ref=main">Solutions</a>
@@ -86,15 +90,15 @@
       </div>
       <hr class='space' />
       <hr />
-      <div class='simple'>
-        <div id='sub-menu'>
+      <div class='simple' id='main'>
+        <div class='nav' id='secondary'>
           <ul>
             <li><a href="404.html">404</a></li>
             <li><a href="500.html">500</a></li>
             <li><a href="simple.html">Simple</a></li>
           </ul>
         </div>
-        <div id='content'>
+        <div id='article'>
           <h1>This is an example of Heading 1</h1>
           <h2>This is an example of heading 2</h2>
           <h3>This is an example of heading 3</h3>
@@ -222,7 +226,7 @@
             </p>
           </form>
         </div>
-        <div id='side-bar'>
+        <div id='sidebar'>
           <h2>Sidebar</h2>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
