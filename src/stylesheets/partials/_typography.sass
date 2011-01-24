@@ -1,16 +1,12 @@
-@import blueprint/fancy-type
+html 
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
 
-// TODO setup your sites typography
-
-// TODO Example font-families, you probably want to remove these
-+font-samples
-
-#branding
-  +column(19)
-  h2
-    +alt
+// Links ----------------------------------------------------------------------
 
 a
+  &:link, &:visited, &:hover, &:active
+    outline: none
   &:link
     color: dark-blue
   &:active
@@ -19,4 +15,51 @@ a
     color: gray
   &:hover
     text-decoration: none
-    
+  &:focus 
+    outline: thin dotted
+
+// Headings -------------------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6
+
+// Inline ---------------------------------------------------------------------
+
+cite, em, dfn, address, i
+  font-style: italic
+
+strong, dfn, b 
+  font-weight: bold
+
+sup, sub
+  font-size: smaller
+  line-height: 0
+
+sup 
+  vertical-align: super
+
+sub 
+  vertical-align: sub
+
+abbr, acronym 
+  border-bottom: 1px dotted
+  cursor: help
+
+ins 
+  text-decoration: underline
+
+del
+  text-decoration: line-through
+
+// Block ----------------------------------------------------------------------
+p
+pre
+blockquote
+
+// Lists ----------------------------------------------------------------------
+// TODO: Add list styles
+
+// Tables ---------------------------------------------------------------------
+// TODO: Add table styles
+
+// Forms ----------------------------------------------------------------------
+// TODO: Add form styles
