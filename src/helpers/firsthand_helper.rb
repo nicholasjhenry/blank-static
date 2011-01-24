@@ -18,6 +18,10 @@ module FirsthandHelper
     meta(:content => "text/html; charset=#{set}", "http-equiv" => "Content-Type")
   end
 
+  def force_ie_rendering_and_chrome_frame
+    meta(:'http-equiv' => "X-UA-Compatible", :content => "IE=edge,chrome=1")
+  end
+
   def dublin_core(options)
     tag("link", :href => "http://purl.org/DC/elements/1.0/", :rel => "schema.DC") +
       newline +    
