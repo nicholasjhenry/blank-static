@@ -1,5 +1,10 @@
+.DS_Store
 .sass-cache
 .bundle
 .bundle-cache
 site/*.html
 site/stylesheets/*.css
+
+.deploy-git.tar.gz
+.gems
+config.ru
