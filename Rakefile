@@ -35,6 +35,7 @@ namespace :deploy do
       raise "App name cannot be blank" unless app_name
 
       `mv .git .git-tmp`
+      `mv .gitignore .gitignore-tmp`
       `git init .`
 
       puts "Building static site..."
@@ -57,6 +58,7 @@ namespace :deploy do
     ensure
       puts "Cleaning up..."
       `rm -rf .git`
+      `mv .gitignore-tmp .gitignore`
       `mv .git-tmp .git`
       puts "...Completed."
     end
